@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::prefix('games')->group(function () {
+    Route::namespace('Games')->group(function () {
+        Route::get('/basketball/super-star-of-the-future', 'BasketballController@superStar');
+        Route::post('/basketball/make-star', 'BasketballController@makeStar')->name('make.super.star');
+    });
+});
