@@ -59,7 +59,7 @@ class BasketballController extends Controller
 
     /**
      * 转换成UTF8字体
-     * @param $str 字符串
+     * @param $str
      * @return string
      */
     private function reverse2($str)
